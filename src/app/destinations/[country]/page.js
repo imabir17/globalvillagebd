@@ -98,7 +98,7 @@ export default async function CountryPage({ params }) {
               <p style={{ color: '#94A3B8', marginBottom: '2rem', fontSize: '1rem', lineHeight: '1.6' }}>
                 Our expert counselors are here to help you secure your admission and student visa for {destination.name}. Let us guide you every step of the way.
               </p>
-              <Link href="/services" className="btn-primary" style={{ width: '100%', display: 'inline-block', padding: '1rem', fontSize: '1.1rem', background: '#2563EB', borderRadius: '0.5rem', fontWeight: '600', transition: 'background 0.3s' }}>
+              <Link href="#consultation" className="btn-primary" style={{ width: '100%', display: 'inline-block', padding: '1rem', fontSize: '1.1rem', background: '#2563EB', borderRadius: '0.5rem', fontWeight: '600', transition: 'background 0.3s' }}>
                 Book Free Consultation
               </Link>
               <div style={{ marginTop: '1.5rem', fontSize: '0.875rem', color: '#64748B' }}>

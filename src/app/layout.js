@@ -1,8 +1,6 @@
 import "./globals.css";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import PromoPopup from "@/components/PromoPopup";
+import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 
 export const metadata = {
   title: "Global Village Academy | Your Global Journey Starts Here",
@@ -13,10 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <PromoPopup />
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <ClientLayoutWrapper>
+          {children}
+        </ClientLayoutWrapper>
       </body>
     </html>
   );

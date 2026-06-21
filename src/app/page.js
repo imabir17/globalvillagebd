@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { supabase } from '@/lib/supabaseClient';
+import ConsultationButton from '@/components/ConsultationButton';
 
 export const revalidate = 0;
 
@@ -18,7 +19,7 @@ export default async function Home() {
             dreams into reality.
           </p>
           <div className="hero-buttons">
-            <a href="/consultation" className="btn-primary">Book a Free Consultation</a>
+            <ConsultationButton className="btn-primary">Book a Free Consultation</ConsultationButton>
             <a href="/destinations" className="btn-outline">Explore Destinations</a>
           </div>
         </div>

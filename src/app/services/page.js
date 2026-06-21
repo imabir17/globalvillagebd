@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ConsultationButton from '@/components/ConsultationButton';
 
 export default function ServicesPage() {
   const services = [
@@ -59,7 +60,7 @@ export default function ServicesPage() {
             We provide end-to-end support for students aspiring to study abroad. From choosing the right university to landing in your dream destination, we are with you every step of the way.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-            <Link href="/consultation" className="btn-primary">Book a Free Consultation</Link>
+            <ConsultationButton className="btn-primary">Book a Free Consultation</ConsultationButton>
             <Link href="/about" className="btn-outline-dark" style={{ borderColor: '#E2E8F0' }}>Learn About Us</Link>
           </div>
         </div>
@@ -134,9 +135,9 @@ export default function ServicesPage() {
           <p style={{ fontSize: '1.1rem', opacity: 0.9, marginBottom: '2.5rem', lineHeight: '1.6' }}>
             Book a free consultation with our experts and get a personalized roadmap for your study abroad journey.
           </p>
-          <Link href="/consultation" className="btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)', padding: '1rem 2rem', fontSize: '1rem', fontWeight: '600' }}>
+          <ConsultationButton className="btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)', padding: '1rem 2rem', fontSize: '1rem', fontWeight: '600' }}>
             Get Started Today
-          </Link>
+          </ConsultationButton>
         </div>
       </section>
     </div>
