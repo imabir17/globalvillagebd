@@ -6,7 +6,7 @@ export default function Footer() {
           
           <div className="footer-brand">
             <div className="footer-logo-wrap">
-              <div className="logo-icon-bg">🌍</div>
+              <img src="/logo.png" alt="GVA Logo" style={{ width: '48px', height: '48px', objectFit: 'contain', backgroundColor: 'white', borderRadius: '8px', padding: '4px' }} />
               <span className="logo-text text-white">Global Village<br/><strong>Academy</strong></span>
             </div>
             <p className="footer-desc">
@@ -35,11 +35,11 @@ export default function Footer() {
           <div className="footer-links-col">
             <h3>Services</h3>
             <ul>
-              <li><a href="/admission">University Admission</a></li>
-              <li><a href="/visa">Visa Processing</a></li>
-              <li><a href="/japanese">Japanese Language</a></li>
-              <li><a href="/tourist">Tourist Visa</a></li>
-              <li><a href="/counseling">Career Counseling</a></li>
+              <li><a href="/services/university-application">University Admission</a></li>
+              <li><a href="/services/visa-processing">Visa Processing</a></li>
+              <li><a href="/services/japanese-language">Japanese Language</a></li>
+              <li><a href="/services/tourist-visa">Tourist Visa</a></li>
+              <li><a href="/services/career-counseling">Career Counseling</a></li>
             </ul>
           </div>
           
