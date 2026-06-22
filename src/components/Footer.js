@@ -27,8 +27,8 @@ export default function Footer() {
               <li><a href="/about">About Us</a></li>
               <li><a href="/services">Our Services</a></li>
               <li><a href="/destinations">Destinations</a></li>
-              <li><a href="/success">Success Stories</a></li>
-              <li><a href="/news">Latest News</a></li>
+              <li><a href="/gallery">Success Stories</a></li>
+              <li><a href="/blog">Latest News</a></li>
             </ul>
           </div>
           
