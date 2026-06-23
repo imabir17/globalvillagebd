@@ -17,6 +17,7 @@ export const metadata = {
 };
 
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function RootLayout({ children }) {
   return (
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           {children}
         </ClientLayoutWrapper>
         <Analytics />
+        <GoogleAnalytics gaId="G-7EXMBC51Q7" />
       </body>
     </html>
   );
