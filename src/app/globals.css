@@ -828,3 +828,6 @@ img {
     text-align: center;
   }
 }
+
+.blog-card-hover { box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.blog-card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }

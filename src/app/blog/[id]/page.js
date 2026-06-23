@@ -76,8 +76,8 @@ export default async function BlogPostPage({ params }) {
 
           <div 
             className="blog-content"
-            style={{ whiteSpace: 'pre-wrap' }}
-            dangerouslySetInnerHTML={{ __html: blog.content }} 
+            style={{ overflowWrap: 'break-word' }}
+            dangerouslySetInnerHTML={{ __html: blog.content.replace(/&nbsp;/g, ' ').replace(/\u00A0/g, ' ') }} 
           />
         </div>
       </div>
@@ -91,6 +91,9 @@ export default async function BlogPostPage({ params }) {
         .blog-content a { color: #2563EB; text-decoration: underline; }
         .blog-content img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 2rem 0; }
         .blog-content blockquote { border-left: 4px solid #2563EB; padding-left: 1rem; font-style: italic; color: #64748B; margin: 2rem 0; }
+        .blog-content table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; display: block; overflow-x: auto; max-width: 100%; }
+        .blog-content th, .blog-content td { border: 1px solid #E2E8F0; padding: 0.75rem; text-align: left; }
+        .blog-content th { background-color: #F8FAFC; font-weight: 600; }
       `}} />
     </article>
   );
