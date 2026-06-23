@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const revalidate = 0;
 
 export default async function BlogPostPage({ params }) {
-  const { id } = params;
+  const { id } = await params;
 
   // Fetch the specific blog post by ID
   const { data: blog, error } = await supabase
