@@ -16,6 +16,8 @@ export const metadata = {
   },
 };
 
+import { Analytics } from '@vercel/analytics/react';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
         <ClientLayoutWrapper>
           {children}
         </ClientLayoutWrapper>
+        <Analytics />
       </body>
     </html>
   );
